@@ -1,0 +1,117 @@
+.detail {
+    flex: 1;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.6) rgba(255, 255, 255, 0);
+
+    .user {
+        padding: 15px 43px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        border-bottom: 1px solid #ffffff26;
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .info {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .option {
+
+            .title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    background-color: #000000b6;
+                    padding: 10px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            }
+
+            .photos {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 5px;
+
+                .photo-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .photo-detail {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 5px;
+                            object-fit: cover;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            color: #000000;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        background-color: #000000b6;
+                        padding: 10px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #000000;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            border-radius: 30px;
+            transition: .7s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #b60000;
+                transition: .7s;
+            }
+
+            &.logout {
+                padding: 10px;
+                background-color: #fff;
+                color: #000000;
+                transition: .7s;
+                font-weight: 700;
+            }
+
+            &:hover {
+                background-color: #ff0000;
+                transition: .7s;
+            }
+        }
+    }
+}
